@@ -2,23 +2,13 @@ from flask import Flask, request, redirect
 
 app = Flask(__name__)
 
-# =====================================================
-# Redirect domain DuckDNS → Render HTTPS
-# =====================================================
-@app.before_request
-def redirect_duckdns():
-    host = request.host.lower()
-
-    if "namhai99.duckdns.org" in host:
-        return redirect("https://one-k7o5.onrender.com", code=301)
-
 
 # =====================================================
 # GET /api/hash.php
 # =====================================================
 @app.route("/api/hash.php", methods=["GET"])
 def hash_php():
-    return "ca07f0971f5dd187fdb952ec09ac8d85eea631f92b0f232d730bc9de219231c6"
+    return "c966b57c651dc9ff89a2ebdf65d6dfa659f0acbab1f45af25d1597f242c3bdf0"
 
 
 # =====================================================
