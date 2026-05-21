@@ -8,7 +8,7 @@ app = Flask(__name__)
 # =====================================================
 @app.route("/api/hash.php", methods=["GET"])
 def hash_php():
-    return "c966b57c651dc9ff89a2ebdf65d6dfa659f0acbab1f45af25d1597f242c3bdf0"
+    return "ab94ef297bd37e00d2952488eb2a0ca82a5133d67261d3da751e062a4e1a9960"
 
 
 # =====================================================
