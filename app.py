@@ -6,20 +6,7 @@ app = Flask(__name__)
 # =====================================================
 # GET /api/hash.php
 # =====================================================
-@app.route("/api/hash.php", methods=["GET"])
-def hash_php():
-    return "ab94ef297bd37e00d2952488eb2a0ca82a5133d67261d3da751e062a4e1a9960"
-
-
 # =====================================================
-# GET /api/auth?datavery=
-# =====================================================
-@app.route("/api/auth", methods=["GET"])
-@app.route("/api/auth.php", methods=["GET"])
-def auth():
-    return "nk0wr0oxw1d5a8n2j49fc26gyinwe6khqf1n1zhwk2ayy3tvv0igf0z435mu"
-
-
 # =====================================================
 # POST /api/active_soft_final_20240605.php
 # =====================================================
